@@ -16,7 +16,7 @@
     <div class="col-md-12">
       <h4>Booking List</h4>
       
-        <div class="row align-items-center">
+        <div class="row align-items-center"> 
             <div class="col-12">
                 <div class="card border-0">
                     <div class="card-header bg-primary text-center">

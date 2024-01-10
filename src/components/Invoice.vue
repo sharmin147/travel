@@ -23,9 +23,8 @@
                             </div>
                         </div>
                     </td>
-                
-                    <td>
-                        <div class="panel panel-default height">
+                <td>
+                   <div class="panel panel-default height">
                             <div class="panel-heading">Payment Information</div>
                             <div class="panel-body">
                                 <strong>Pay Type:</strong> {{cinv.payment.payment_method}}<br>

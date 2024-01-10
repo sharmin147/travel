@@ -15,8 +15,7 @@
     </div>
     <div class="col-md-12">
       <h4>Booking List</h4>
-      
-        <div class="row align-items-center"> 
+       <div class="row align-items-center"> 
             <div class="col-12">
                 <div class="card border-0">
                     <div class="card-header bg-primary text-center">
@@ -64,20 +63,15 @@
         <div>
           <label><strong>Status:</strong></label> {{ currentTutorial.published ? "Published" : "Pending" }}
         </div>
-
-        
-      </div>
+       </div>
       <div v-else>
         <br />
         <p>Please click on a Tutorial...</p>
       </div>
     </div>
   </div>
-</template>
-
-<script>
+</template><script>
 import bDataService from "../services/bDataService";
-
 export default {
   name: "booking-list",
   data() {
@@ -100,16 +94,11 @@ export default {
           console.log(e);
         });
     },
-
-   
-
-    setActiveTutorial(tutorial, index) {
+   setActiveTutorial(tutorial, index) {
       this.currentTutorial = tutorial;
       this.currentIndex = tutorial ? index : -1;
     },
-
-    
-    searchTitle() {
+  searchTitle() {
       bDataService.findByTitle(this.title)
         .then(response => {
           this.invs = response.data;

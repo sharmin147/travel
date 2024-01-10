@@ -24,13 +24,11 @@
     </div>
     <!-- Navbar End -->
   <div>
-
-    <div class="container-fluid mt-3">
+<div class="container-fluid mt-3">
       <router-view />
     </div>
   </div>
 </template>
-
 <script>
 export default {
   name: "app",
